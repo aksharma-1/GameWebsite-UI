@@ -19,19 +19,19 @@ function FeaturedGames() {
       <div className="p-8 px-20 bg-neutral-900">
         <ul className="flex justify-center items-center gap-3">
           <li>
-            <img src="/public/Images/Games/game1.jpg" className="rounded-2xl"/>
+            <img src="/Images/Games/game1.jpg" className="rounded-2xl"/>
           </li>
           <li>
-            <img src="/public/Images/Games/game2.jpg" className="rounded-2xl"/>
+            <img src="/Images/Games/game2.jpg" className="rounded-2xl"/>
           </li>
           <li>
-            <img src="/public/Images/Games/game3.jpg" className="rounded-2xl"/>
+            <img src="/Images/Games/game3.jpg" className="rounded-2xl"/>
           </li>
           <li>
-            <img src="/public/Images/Games/game4.jpg" className="rounded-2xl"/>
+            <img src="/Images/Games/game4.jpg" className="rounded-2xl"/>
           </li>
           <li>
-            <img src="/public/Images/Games/game5.jpg" className="rounded-2xl"/>
+            <img src="/Images/Games/game5.jpg" className="rounded-2xl"/>
           </li>
         </ul>
       </div>
