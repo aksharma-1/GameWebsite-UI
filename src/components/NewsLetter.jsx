@@ -4,7 +4,7 @@ function NewsLetter() {
   return (
     <div className="bg-neutral-900 flex justify-center items-center p-10 gap-4">
       <div>
-        <img src="/public/Images/Layer2.png" width={150} />
+        <img src="/Images/Layer2.png" width={150} />
       </div>
 
       <div>

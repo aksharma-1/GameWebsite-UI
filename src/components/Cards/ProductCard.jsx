@@ -4,7 +4,7 @@ function ProductCard({ title, image }) {
   return (
     <div className="text-start flex flex-col items-start ">
       <div className="product_image bg-amber-100 rounded-xl w-full h-60 flex justify-center items-center">
-        <img src={`/public/Images/Products/product${image}.png`} width={150}/>
+        <img src={`/Images/Products/product${image}.png`} width={150}/>
       </div>
       <h6 className="font-bold uppercase text-xs mt-2">{title}</h6>
       <p className="my-2 text-gray-700" style={{ fontSize: "10px" }}>

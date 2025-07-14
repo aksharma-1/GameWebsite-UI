@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <div className='bg-gray-900 text-white p-10 flex flex-col justify-center items-center gap-4'>
-        <img src='/public/Images/logo2.png' width={120}/>
+        <img src='/Images/logo2.png' width={120}/>
         <ul className='flex gap-8' style={{fontSize:'12px'}}>
             <li><button className='cursor-pointer uppercase font-medium'>Product</button></li>
             <li><button className='cursor-pointer uppercase font-medium'>Features</button></li>
