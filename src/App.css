@@ -1,0 +1,26 @@
+#banner {
+  background-image: url("/public/Images/banner.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#banner-heading {
+  font-family: cursive;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.search_box input:focus {
+  outline: none;
+}
+.search_box input::placeholder {
+  font-size: 8px;
+  color: black;
+}
+
+.product_image {
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
