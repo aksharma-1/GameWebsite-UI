@@ -18,7 +18,7 @@ function NewsLetter() {
           <div className="border-1 rounded-lg p-1 px-2 flex items-center bg-white">
             <input
               type="email"
-              className="rounded-md text-xs p-1 w-full focus:border-0 "
+              className="rounded-md text-xs p-1 w-full focus:outline-hidden"
               placeholder="Enter your email"
             ></input>
           </div>
