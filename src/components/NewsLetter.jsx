@@ -23,13 +23,18 @@ function NewsLetter() {
             ></input>
           </div>
           <div>
-            <button className="cursor-pointer bg-amber-300 text-neutral-800 text-xs px-3 p-2 rounded">
+            <button className="group relative overflow-hidden transition cursor-pointer bg-amber-300 text-neutral-800 text-xs px-3 p-2 rounded ">
               Subscribe
+              <div className="absolute inset-0 h-full w-0 bg-white/30 transition-[width] group-hover:w-full"></div>
             </button>
           </div>
         </div>
-        <p className="text-neutral-400 mt-1 text-center sm:text-start" style={{fontSize:'8px'}}>
-          We care about your data in our <span className="text-amber-300">privacy policy</span>
+        <p
+          className="text-neutral-400 mt-1 text-center sm:text-start"
+          style={{ fontSize: "8px" }}
+        >
+          We care about your data in our{" "}
+          <span className="text-amber-300">privacy policy</span>
         </p>
       </div>
     </div>

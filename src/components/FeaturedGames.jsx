@@ -10,28 +10,44 @@ function FeaturedGames() {
           <p className="text-xs">Top picks - hottest games of the season</p>
         </div>
         <div>
-          <button className="cursor-pointer text-xs p-1 font-medium outline-1 px-3 outline-offset-1 outline-white rounded-lg">
+          <button className="group relative overflow-hidden transition cursor-pointer bg-purple-500 text-white rounded-lg text-xs p-1 font-medium outline-1 px-3 outline-offset-1 outline-white">
             SEE ALL
+            <div className="absolute inset-0 h-full w-0 bg-white/30 transition-[width] group-hover:w-full"></div>
           </button>
         </div>
       </div>
       {/* Lower section */}
       <div className="p-8 md:px-20 bg-neutral-900">
         <ul className="flex justify-center items-center gap-3">
-          <li>
-            <img src="/Images/Games/game1.jpg" className="sm:rounded-md md:rounded-2xl"/>
+          <li className="sm:rounded-md md:rounded-2xl">
+            <img
+              src="/Images/Games/game1.jpg"
+              className="sm:rounded-md md:rounded-2xl hover:scale-105 ease-in-out duration-300 cursor-pointer"
+            />
           </li>
-          <li>
-            <img src="/Images/Games/game2.jpg" className="sm:rounded-md md:rounded-2xl"/>
+          <li className="sm:rounded-md md:rounded-2xl">
+            <img
+              src="/Images/Games/game2.jpg"
+              className="sm:rounded-md md:rounded-2xl hover:scale-105 ease-in-out duration-300 cursor-pointer"
+            />
           </li>
-          <li>
-            <img src="/Images/Games/game3.jpg" className="sm:rounded-md md:rounded-2xl"/>
+          <li className="sm:rounded-md md:rounded-2xl">
+            <img
+              src="/Images/Games/game3.jpg"
+              className="sm:rounded-md md:rounded-2xl hover:scale-105 ease-in-out duration-300 cursor-pointer"
+            />
           </li>
-          <li>
-            <img src="/Images/Games/game4.jpg" className="sm:rounded-md md:rounded-2xl"/>
+          <li className="sm:rounded-md md:rounded-2xl">
+            <img
+              src="/Images/Games/game4.jpg"
+              className="sm:rounded-md md:rounded-2xl hover:scale-105 ease-in-out duration-300 cursor-pointer"
+            />
           </li>
-          <li>
-            <img src="/Images/Games/game5.jpg" className="sm:rounded-md md:rounded-2xl"/>
+          <li className="sm:rounded-md md:rounded-2xl">
+            <img
+              src="/Images/Games/game5.jpg"
+              className="sm:rounded-md md:rounded-2xl hover:scale-105 ease-in-out duration-300 cursor-pointer"
+            />
           </li>
         </ul>
       </div>

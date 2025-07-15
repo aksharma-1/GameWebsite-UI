@@ -9,35 +9,35 @@ function Footer() {
         style={{ fontSize: "12px" }}
       >
         <li>
-          <button className="cursor-pointer uppercase font-medium">
+          <button className="cursor-pointer uppercase font-medium hover:scale-110 duration-300 ease-in-out">
             Product
           </button>
         </li>
         <li>
-          <button className="cursor-pointer uppercase font-medium">
+          <button className="cursor-pointer uppercase font-medium hover:scale-110 duration-300 ease-in-out">
             Features
           </button>
         </li>
         <li>
-          <button className="cursor-pointer uppercase font-medium">
+          <button className="cursor-pointer uppercase font-medium hover:scale-110 duration-300 ease-in-out">
             Pricing
           </button>
         </li>
         <li>
-          <button className="cursor-pointer uppercase font-medium">
+          <button className="cursor-pointer uppercase font-medium hover:scale-110 duration-300 ease-in-out">
             Reasoures
           </button>
         </li>
         <li>
-          <button className="cursor-pointer uppercase font-medium">
+          <button className="cursor-pointer uppercase font-medium hover:scale-110 duration-300 ease-in-out">
             Careers
           </button>
         </li>
         <li>
-          <button className="cursor-pointer uppercase font-medium">help</button>
+          <button className="cursor-pointer uppercase font-medium hover:scale-110 duration-300 ease-in-out">help</button>
         </li>
         <li className="col-span-3 sm:col-span-1">
-          <button className="cursor-pointer uppercase font-medium">
+          <button className="cursor-pointer uppercase font-medium hover:scale-110 duration-300 ease-in-out">
             Privacy
           </button>
         </li>
