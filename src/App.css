@@ -24,3 +24,20 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 1024px) {
+  #banner{
+    height: 450px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #banner{
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #banner{
+    height: 300px;
+  }
+}

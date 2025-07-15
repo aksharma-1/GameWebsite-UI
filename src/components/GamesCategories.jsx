@@ -34,7 +34,7 @@ function GamesCategories() {
       <p className="text-sm text-center font-medium text-gray-600">
         GameQuest - Discover, Play, and Conquer the Best Games of the Decade!
       </p>
-      <div className="flex gap-2 mb-2 mt-5 px-60">
+      <div className="grid grid-cols-4 md:grid-cols-8 gap-2 mt-5 px-10 md:px-30 lg:px-40">
         {categories.slice(0, 8).map((item, index) => (
           <>
             <button
@@ -51,7 +51,8 @@ function GamesCategories() {
           </>
         ))}
       </div>
-      <div className="flex gap-2 mt-1 px-80">
+
+      <div className="grid grid-cols-3 gap-2 mb-2 mt-2 px-10 md:px-40 lg:px-50">
         {categories.slice(8).map((item, index) => (
           <>
             <button
@@ -67,7 +68,7 @@ function GamesCategories() {
       </div>
 
       {/* -search input- */}
-      <div className="search_box flex items-center justify-center gap-3 my-6 px-60">
+      <div className="search_box items-center justify-center gap-3 my-6 px-10 flex">
         <div className="border-1 rounded-lg p-1 px-2 flex items-center w-60">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +86,7 @@ function GamesCategories() {
           </svg>
           <input
             type="text"
-            class="rounded-md text-xs p-1 w-full focus:border-0"
+            class="rounded-md text-xs p-1 focus:border-0"
             placeholder="SEARCH FOR GAMES"
           ></input>
         </div>
@@ -97,7 +98,7 @@ function GamesCategories() {
       </div>
 
       {/* -Game cards---------- */}
-      <div className="grid grid-cols-4 gap-4 px-60">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-10 md:px-20 lg:px-40">
         {Games.map((item, index) => (
           <Gamecard key={index * 31} title={item} image={index + 5} />
         ))}

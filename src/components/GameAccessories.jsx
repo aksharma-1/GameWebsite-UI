@@ -39,7 +39,7 @@ function GameAccessories() {
       <p className="text-sm text-center font-medium text-gray-600">
         GameQuest - Discover, Play, and Conquer the Best Games of the Decade!
       </p>
-      <div className="flex gap-2 mb-2 mt-5 px-60">
+      <div className="grid grid-cols-4 md:grid-cols-8 gap-2 mt-5 px-10 md:px-30 lg:px-40">
         {categories.slice(0, 8).map((item, index) => (
           <>
             <button
@@ -56,7 +56,7 @@ function GameAccessories() {
           </>
         ))}
       </div>
-      <div className="flex gap-2 mt-1 px-60">
+      <div className="grid grid-cols-4 md:grid-cols-7 gap-2 mt-2 px-10 md:px-30 lg:px-40">
         {categories.slice(8).map((item, index) => (
           <>
             <button
@@ -72,7 +72,7 @@ function GameAccessories() {
       </div>
 
       {/* -search input- */}
-      <div className="search_box flex items-center justify-center gap-3 my-6 px-60">
+      <div className="search_box flex items-center justify-center gap-3 my-6 px-10">
         <div className="border-1 rounded-lg p-1 px-2 flex items-center w-60">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +102,7 @@ function GameAccessories() {
       </div>
 
       {/* -Game cards---------- */}
-      <div className="grid grid-cols-4 gap-4 px-60">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-10 md:px-20 lg:px-40">
         {products.map((item, index) => (
           <ProductCard key={index * 31} title={item} image={index + 1} />
         ))}

@@ -3,8 +3,8 @@ import React from "react";
 function Banner() {
   return (
     <div id="banner" className="flex items-center flex-col justify-center gap-1">
-      <div className="w-2xl">
-        <h3 id="banner-heading" className=" text-amber-300 text-4xl font-bold p-6 text-center">
+      <div className="sm:w-xl">
+        <h3 id="banner-heading" className=" text-amber-300 sm:text-2xl md:text-3xl font-bold p-6 text-center">
           Unleash Your Inner Champion Dive into the Ultimate Gaming Experience!
         </h3>
       </div>
