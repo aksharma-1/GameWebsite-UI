@@ -5,20 +5,20 @@ function NewsLetter() {
   return (
     <div className="bg-neutral-900 flex flex-col sm:flex-row justify-center items-center p-2 sm:p-10 gap-4">
       <motion.div
-        whileInView={{ opacity: 1, translateX: 0 }}
-        viewport={{ once: true }}
         initial={{ opacity: 0, translateX: -70 }}
-        transition={{ duration: 0.8 }}
+        whileInView={{ opacity: 1, translateX: 0 }}
+        viewport={{ once: true, amount: 1 }}
+        transition={{ duration: 1,delay: 0.3 }}
       >
         <img src="/Images/Layer2.png" width={150} />
       </motion.div>
 
       <motion.div
         className=""
-        whileInView={{ opacity: 1, translateX: 0 }}
-        viewport={{ once: true }}
         initial={{ opacity: 0, translateX: 70 }}
-        transition={{ duration: 0.8 }}
+        whileInView={{ opacity: 1, translateX: 0 }}
+        viewport={{ once: true, amount: 1 }}
+        transition={{ duration: 1, delay: 0.3 }}
       >
         <h6 className="uppercase text-white font-medium text-lg sm:text-xl">
           Sign up for our newsletter

@@ -34,7 +34,7 @@ function GamesCategories() {
     <div className="pt-10">
       <motion.h3
         className="font-bold text-center text-gray-900 mb-1"
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 1 }}
         whileInView={{ opacity: 1, translateY: 0 }}
         initial={{ opacity: 0, translateY: 50 }}
         transition={{ duration: 0.5, delay: 0.3 }}
@@ -43,7 +43,7 @@ function GamesCategories() {
       </motion.h3>
       <motion.p
         className="text-sm text-center font-medium text-gray-600"
-        viewport={{ once: true }}
+        viewport={{ once: true,amount: 1 }}
         whileInView={{ opacity: 1, translateY: 0 }}
         initial={{ opacity: 0, translateY: 50 }}
         transition={{ duration: 0.5, delay: 0.5 }}
@@ -53,7 +53,7 @@ function GamesCategories() {
       <div className="grid grid-cols-4 md:grid-cols-8 gap-2 mt-5 px-10 md:px-30 lg:px-40">
         {categories.slice(0, 8).map((item, index) => (
           <motion.button
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 1 }}
             whileInView={{ opacity: 1, translateY: 0 }}
             initial={{ opacity: 0, translateY: 50 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -76,7 +76,7 @@ function GamesCategories() {
       <div className="grid grid-cols-3 gap-2 mb-2 mt-2 px-10 md:px-40 lg:px-50">
         {categories.slice(8).map((item, index) => (
           <motion.button
-            viewport={{ once: true }}
+            viewport={{ once: true,amount: 1 }}
             whileInView={{ opacity: 1, translateY: 0 }}
             initial={{ opacity: 0, translateY: 50 }}
             transition={{ duration: 0.5, delay: (index + 8) * 0.1 }}
