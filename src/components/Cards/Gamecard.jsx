@@ -3,11 +3,13 @@ import React from "react";
 function Gamecard({ title, image }) {
   return (
     <div className="text-start p-2 flex flex-col items-start relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
-      <img
-        src={`/Images/Cards/Component${image}.jpg`}
-        width={"100%"}
-        className="max-w-xs transition duration-300 ease-in-out hover:scale-105 cursor-pointer"
-      />
+      <div className="overflow-hidden">
+        <img
+          src={`/Images/Cards/Component${image}.jpg`}
+          width={"100%"}
+          className="max-w-xs transition duration-300 ease-in-out hover:scale-105 cursor-pointer"
+        />
+      </div>
       <h6 className="font-bold uppercase text-xs mt-2">{title}</h6>
       <p className="my-2 text-gray-700" style={{ fontSize: "10px" }}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non
