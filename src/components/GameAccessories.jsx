@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Pagination from "./Pagination";
 import ProductCard from "./Cards/ProductCard";
+import { motion } from "framer-motion";
 
 function GameAccessories() {
   const [currentCategory, setCurrentCategory] = useState("gaming headset");
@@ -35,15 +36,31 @@ function GameAccessories() {
 
   return (
     <div className="pt-10">
-      <h3 className="font-bold text-center text-gray-900 mb-1">
-        GAMES CATEGORIES
-      </h3>
-      <p className="text-sm text-center font-medium text-gray-600">
+      <motion.h3
+        className="font-bold text-center text-gray-900 mb-1"
+        viewport={{ once: true }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        initial={{ opacity: 0, translateY: 50 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+      >
+        GAMES ACCESSORIES
+      </motion.h3>
+      <motion.p
+        className="text-sm text-center font-medium text-gray-600"
+        viewport={{ once: true }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        initial={{ opacity: 0, translateY: 50 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+      >
         GameQuest - Discover, Play, and Conquer the Best Games of the Decade!
-      </p>
+      </motion.p>
       <div className="grid grid-cols-4 md:grid-cols-8 gap-2 mt-5 px-10 md:px-30 lg:px-40">
         {categories.slice(0, 8).map((item, index) => (
-          <button
+          <motion.button
+            viewport={{ once: true }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            initial={{ opacity: 0, translateY: 50 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
             key={index + 9}
             className={`relative overflow-hidden duration-300 [transition-timing-function:cubic-bezier(0.175,0.885,0.32,1.275)] active:translate-y-1 active:scale-x-110 active:scale-y-90 cursor-pointer border-1 font-medium border-solid border-amber-200  p-1 px-1 rounded uppercase w-full ${
               currentCategory === item
@@ -56,12 +73,16 @@ function GameAccessories() {
             onClick={() => setCurrentCategory(item)}
           >
             {item}
-          </button>
+          </motion.button>
         ))}
       </div>
       <div className="grid grid-cols-4 md:grid-cols-7 gap-2 mt-2 px-10 md:px-30 lg:px-40">
         {categories.slice(8).map((item, index) => (
-          <button
+          <motion.button
+            viewport={{ once: true }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            initial={{ opacity: 0, translateY: 50 }}
+            transition={{ duration: 0.5, delay: (index + 8) * 0.1 }}
             key={index + 9}
             className={`relative overflow-hidden duration-300 [transition-timing-function:cubic-bezier(0.175,0.885,0.32,1.275)] active:translate-y-1 active:scale-x-110 active:scale-y-90 cursor-pointer border-1 font-medium border-solid border-amber-200  p-1 px-1 rounded uppercase w-full ${
               currentCategory === item
@@ -74,7 +95,7 @@ function GameAccessories() {
             onClick={() => setCurrentCategory(item)}
           >
             {item}
-          </button>
+          </motion.button>
         ))}
       </div>
 

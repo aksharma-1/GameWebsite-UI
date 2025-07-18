@@ -1,13 +1,25 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function NewsLetter() {
   return (
     <div className="bg-neutral-900 flex flex-col sm:flex-row justify-center items-center p-2 sm:p-10 gap-4">
-      <div>
+      <motion.div
+        whileInView={{ opacity: 1, translateX: 0 }}
+        viewport={{ once: true }}
+        initial={{ opacity: 0, translateX: -70 }}
+        transition={{ duration: 0.8 }}
+      >
         <img src="/Images/Layer2.png" width={150} />
-      </div>
+      </motion.div>
 
-      <div className="">
+      <motion.div
+        className=""
+        whileInView={{ opacity: 1, translateX: 0 }}
+        viewport={{ once: true }}
+        initial={{ opacity: 0, translateX: 70 }}
+        transition={{ duration: 0.8 }}
+      >
         <h6 className="uppercase text-white font-medium text-lg sm:text-xl">
           Sign up for our newsletter
         </h6>
@@ -36,7 +48,7 @@ function NewsLetter() {
           We care about your data in our{" "}
           <span className="text-amber-300">privacy policy</span>
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 }
