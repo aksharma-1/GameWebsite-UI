@@ -7,7 +7,7 @@ function NewsLetter() {
       <motion.div
         initial={{ opacity: 0, translateX: -70 }}
         whileInView={{ opacity: 1, translateX: 0 }}
-        viewport={{ once: true, amount: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 1,delay: 0.3 }}
       >
         <img src="/Images/Layer2.png" width={150} />
@@ -17,7 +17,7 @@ function NewsLetter() {
         className=""
         initial={{ opacity: 0, translateX: 70 }}
         whileInView={{ opacity: 1, translateX: 0 }}
-        viewport={{ once: true, amount: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 1, delay: 0.3 }}
       >
         <h6 className="uppercase text-white font-medium text-lg sm:text-xl">

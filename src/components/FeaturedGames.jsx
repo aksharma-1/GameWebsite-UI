@@ -22,7 +22,7 @@ function FeaturedGames() {
         <ul className="flex justify-center items-center gap-3">
           <li className="sm:rounded-md md:rounded-2xl">
             <motion.img
-              viewport={{ once: true, amount: 1 }}
+              viewport={{ once: true, amount: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0.5 }}
               transition={{ duration: 0.2 }}
@@ -32,7 +32,7 @@ function FeaturedGames() {
           </li>
           <li className="sm:rounded-md md:rounded-2xl">
             <motion.img
-              viewport={{ once: true,amount: 1 }}
+              viewport={{ once: true,amount: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0.5 }}
               transition={{ duration: 0.2, delay: 0.1 }}
@@ -42,7 +42,7 @@ function FeaturedGames() {
           </li>
           <li className="sm:rounded-md md:rounded-2xl">
             <motion.img
-              viewport={{ once: true, amount: 1 }}
+              viewport={{ once: true, amount: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0.5 }}
               transition={{ duration: 0.2, delay: 0.2 }}
@@ -54,7 +54,7 @@ function FeaturedGames() {
             <motion.img
               src="/Images/Games/game4.jpg"
               className="sm:rounded-md md:rounded-2xl hover:scale-105 ease-in-out duration-300 cursor-pointer"
-              viewport={{ once: true, amount: 1 }}
+              viewport={{ once: true, amount: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0.5 }}
               transition={{ duration: 0.2, delay: 0.3 }}
@@ -62,7 +62,7 @@ function FeaturedGames() {
           </li>
           <li className="sm:rounded-md md:rounded-2xl">
             <motion.img
-              viewport={{ once: true, amount: 1 }}
+              viewport={{ once: true, amount: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0.5 }}
               transition={{ duration: 0.2, delay: 0.4 }}
